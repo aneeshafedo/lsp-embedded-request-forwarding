@@ -24,7 +24,7 @@ function activateSQLServer(context: ExtensionContext) {
 	let connectionNames = []
 	let connectedConnectionName = ''
 	const serverModule = "/home/aneesha/Documents/Dev-Zone/LowCode-VSCode/sql-ls-poc/sql-language-server/packages/server/dist/vscodeExtensionServer.js";
-	const execArgs = ["false"]; // [1: debug]
+	const execArgs = ["false"]; 
 	const debugOptions = { execArgv: ["--nolazy", "--inspect=6009"] };
 	const serverOptions: ServerOptions = {
 		run: { module: serverModule, transport: TransportKind.ipc, args: execArgs },
