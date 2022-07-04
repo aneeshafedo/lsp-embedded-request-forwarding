@@ -40,7 +40,6 @@ function activateSQLServer(context: ExtensionContext) {
 		diagnosticCollectionName: "sqlLanguageServer",
 		synchronize: {
 			configurationSection: "sqlLanguageServer",
-			// fileEvents: workspace.createFileSystemWatcher('**/.sqllsrc.json')
 		},
 	};
 
